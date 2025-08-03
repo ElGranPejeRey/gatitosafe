@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fef4eb;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+/* nav */
+
+.navbar{
+    background-color: #fe9810;
+}
+
+.navbar .navbar-nav .nav-item{
+    position: relative;
+    margin: 0 20px;
+    
+}
+
+.navbar .navbar-nav .nav-item::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    width: 0;
+    height: 3px;
+    transition: all .8s ease;
+}
+
+.navbar .navbar-nav .nav-item:hover::after{
+    width: 100%;
+}
+
+
+#navbarSupportedContent button{
+    background-color: #fe9810;
+    color: white;
+    border: none;
+    transition: all .8s ease;
+}
+
+#navbarSupportedContent button:hover{
+    transform: scale(1.1);
+    background-color: #c5750d;
+}
+
+
+/* hero */
+
+.hero {
+    margin-top: 100px;
+}
+
+.titulo-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-hero {
+    display: flex;
+    justify-content: center;
+}
+
+.img-hero img {
+    width: 400px;
+    height: 400px;
+}
+
+.boton-hero button {
+    background-color: #fe9810;
+    border: none;
+    width: 200px;
+    border-radius: 20px;
+    transition: all .8s;
+}
+
+.boton-hero button:hover {
+    background-color: #c5750d;
+    transform: scale(1.05);
+}
+
+
+/* contenido 1 */
+
+
+
+.conten-1 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #ffe8d8;
+}
+
+.caja-1 {
+    background-color: #f9bd39;
+    border: solid 5px #fe9309;
+
+}
+
+.caja-2 {
+    background-color: #62b5fb;
+    border: solid 5px #399df4;
+}
+
+.caja-3 {
+    background-color: #00e5a0;
+    border: solid 5px #09cc90;
+}
+
+.caja-4 {
+    background-color: #9374fe;
+    border: solid 5px #6f4af1;
+}
+
+.cajas-grup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+    color: white;
+
+}
+
+.text-cont2 {
+    margin-top: 100px;
+
+}
+
+.text-cont2 ul li{
+    color:#f9bd39;
+}
+
+
+/* about */
+
+
+
+.content-about-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.content-about-text h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.content-about-text p{
+    margin: 40px;
+}
+
+.content-about-img{
+    display: flex;
+    justify-content: center;
+}
+
+.content-about-img img{
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: all .5s ease;
+    margin-top: 20px;
+}
+
+
+.patitas{
+    position: absolute;
+    bottom: 0px;
+}
+
+.patitas img{
+    width: 100%;
+    height: 100px;
+    right: 1px;
+    
+}
+
+
+
+/* servicios */
+
+
+.content-service{
+    background-image: url(/img/backgroundservice.jpg);
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.content-service-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.btn-servicios{
+    background-color: #fe9309;
+    border: none;
+    transition: all .5s ease;
+}
+
+
+
+
+                                    /* efectos!!!! */
+
+
+
+/* efectos contenido 1 */
+
+.box{
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.box:hover{
+    transform: scale(1.1) rotate(15deg);
+    box-shadow: 5px 5px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* efectos contenido 3 */
+
+.text-cont3:hover{
+    transform: scale(1.05);
+}
+
+/* efectos about */
+
+.content-about-img img:hover{
+    transform: scale(1.1) rotate(-10deg);
+}
+
+
+/* efectos servicio */
+
+.btn-servicios:hover{
+    background-color: #c5750d;
+    transform: scale(1.1);
+}
