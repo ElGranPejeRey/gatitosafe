@@ -61,6 +61,9 @@ body {
     border: none;
 }
 
+.whatsapp i{
+    color: white;
+}
 
 /* hero */  
 
@@ -245,8 +248,72 @@ body {
     position: fixed;bottom: 20px;
     right: 20px;
     font-size: 50px;
-    color: #fe9309;
+    color: #c5750d;
+    
 }
+
+
+/* formulario */
+
+
+
+.form-box{
+    padding: 35px;
+    border-radius: 15px;
+    background-color: #fe9810;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+.boton-cont-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.boton-form{
+    background-color: white;
+    border: none;
+    color: #c5750d;
+    width: 100px;
+}
+
+/* mapa */
+
+.box-map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+iframe{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+/* footer */
+
+.menu-footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer{
+    margin-top: 100px;
+}
+
+
+/* whatsapp */
+
+.whatsapp{
+    transition: all .8s ease;
+}
+
+.whatsapp i{
+    transition: all .8s ease;
+}
+
 
 
                                     /* efectos!!!! */
@@ -283,4 +350,23 @@ body {
 .btn-servicios:hover{
     background-color: #c5750d;
     transform: scale(1.1);
+}
+
+/* boton form */
+
+
+.boton-form:hover{
+    background-color:#c5750d;
+    color: white;
+}
+
+/* whatsapp */
+
+.whatsapp:hover{
+    transform: scale(1.2);
+    
+}
+
+.whatsapp i:hover{
+    color: #00e5a0;
 }
